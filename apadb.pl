@@ -9,7 +9,6 @@ use open ':std', ':encoding(UTF-8)';
 # Useful for the APA style
 # Expects a "%A" or "%E" entry followed by "surname, name(s)"
 
-my @output;
 my $database = shift or die "No database file specified.\n";
 open(my $f, '<', $database) or die "Cannot open database file: $!";
 while (my $line = readline($f)) {
